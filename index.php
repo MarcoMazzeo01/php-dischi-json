@@ -22,8 +22,15 @@
 
 <body>
   <div id="app">
+    <ul>
+      <li v-for="(disk) in disks">
+        <h3>{{ disk.title }}</h3>
+        <img :src="disk.poster" :alt="disk.title">
+        <address class="author">{{ disk.author }}</address>
+        <p><b>Genre:</b> {{disk.genre}}</p>
 
-
+      </li>
+    </ul>
   </div>
 
 
